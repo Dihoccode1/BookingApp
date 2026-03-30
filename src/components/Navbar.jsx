@@ -11,13 +11,7 @@ import {
   XIcon,
 } from "lucide-react";
 import { useUser } from "@clerk/react";
-import {
-  Show,
-  SignInButton,
-  SignUpButton,
-  useClerk,
-  UserButton,
-} from "@clerk/react";
+import { useClerk, UserButton } from "@clerk/react";
 const Navbar = () => {
   // State quản lý việc đóng/mở menu trên mobile
   const [isOpen, setIsOpen] = useState(false);
