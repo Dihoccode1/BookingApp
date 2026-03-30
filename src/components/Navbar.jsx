@@ -44,7 +44,7 @@ const Navbar = () => {
           }}
           className="hover:text-primary text-white"
         >
-          Home
+          Trang chủ
         </Link>
         <Link
           to="/movies"
@@ -54,7 +54,7 @@ const Navbar = () => {
           }}
           className="hover:text-primary text-white"
         >
-          Movies
+          Danh sách phim
         </Link>
         <Link
           to="/"
@@ -64,7 +64,7 @@ const Navbar = () => {
           }}
           className="hover:text-primary text-white"
         >
-          Releases
+          Lịch chiếu
         </Link>
         <Link
           to="/"
@@ -74,7 +74,7 @@ const Navbar = () => {
           }}
           className="hover:text-primary text-white"
         >
-          Theaters
+          Cụm rạp
         </Link>
       </div>
 
