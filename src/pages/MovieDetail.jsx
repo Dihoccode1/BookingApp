@@ -5,6 +5,7 @@ import { dummyDateTimeData, dummyShowsData } from "../assets/assets";
 import BlurCircle from "../components/BlurCircle";
 import timeFormat from "../lib/timeFormat";
 import DateSelect from "../components/DateSelect";
+import Loading from "../components/Loading";
 
 const MovieDetail = () => {
   const { id } = useParams();
@@ -12,7 +13,9 @@ const MovieDetail = () => {
 
   const getShow = async () => {
     const foundShow = dummyShowsData.find((item) => item._id === id);
-    setShow({ movie: foundShow, dateTime: dummyDateTimeData });
+    if (foundShow) {
+      setShow({ movie: foundShow, dateTime: dummyDateTimeData });
+    }
   };
 
   useEffect(() => {
@@ -95,7 +98,7 @@ const MovieDetail = () => {
       <DateSelect dateTime={show.dateTime} id={id} />
     </div>
   ) : (
-    <div className="mt-20 text-center text-xl">Đang tải thông tin phim....</div>
+    <Loading />
   );
 };
 
