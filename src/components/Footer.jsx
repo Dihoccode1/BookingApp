@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="w-full px-6 pt-8 text-gray-300 md:px-16 lg:px-36">
         <div className="flex w-full flex-col justify-between gap-10 border-b border-gray-500 pb-10 md:flex-row">
           <div className="md:max-w-96">
-            <img alt="" class="h-11" src={logo} />
+            <img alt="" className="h-11" src={logo} />
             <p className="mt-6 text-sm">
               Đây là nền tảng đặt vé xem phim trực tuyến, giúp bạn dễ dàng lựa
               chọn phim, suất chiếu và rạp phù hợp. Trải nghiệm đặt vé nhanh
