@@ -12,10 +12,14 @@ const AdminSideBar = () => {
   };
 
   const adminNavLinks = [
-    { name: "", path: "/admin", icon: LayoutDashboard },
-    { name: "", path: "/admin/add-shows", icon: PlusSquare },
-    { name: "", path: "/admin/list-shows", icon: List },
-    { name: "", path: "/admin/list-bookings", icon: ListCollapse },
+    { name: "Bản điều khiển", path: "/admin", icon: LayoutDashboard },
+    { name: "Thêm xuất chiếu", path: "/admin/add-shows", icon: PlusSquare },
+    { name: "Danh sách xuất chiếu", path: "/admin/list-shows", icon: List },
+    {
+      name: "Danh sách vé đặt",
+      path: "/admin/list-bookings",
+      icon: ListCollapse,
+    },
   ];
 
   return (
