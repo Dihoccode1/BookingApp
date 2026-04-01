@@ -19,3 +19,20 @@ body {
 .no-scrollbar {
     scrollbar-width: none;
 }
+
+
+/* Ẩn mũi tên lên/xuống (spin button) trong ô input number và datetime */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Đổi màu icon cuốn lịch từ Đen sang Trắng (invert) để thấy rõ trên nền tối */
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
